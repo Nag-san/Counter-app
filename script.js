@@ -10,7 +10,6 @@ function revcount() {
 
 }
 
-revcount();
 
 function reset() {
     number = 0;
@@ -19,12 +18,9 @@ function reset() {
     document.getElementById("counter").innerHTML = "Let's go!";
 }
 
-reset(); 
 
 function count() {
     number = number + 1;
     var text = document.getElementById("counter");
     text.innerHTML = number;
 }
-
-count();
