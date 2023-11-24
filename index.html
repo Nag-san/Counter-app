@@ -7,16 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> Counter App </h1>
-    <p id = "counter"> Let's go! </p>
+    <!-- <h1> +/- App </h1> -->
+    <p id> Let's count! </p>
+    <p id = "counter"> </p>
     <br>
-    <div id = "input"> 
-        <label for = "revnum"> Enter number </label>
-        <input type = "number" id = "revnum"> 
-    </div> <br/> <br>
-    <button id = "revcount" onclick = "revcount()"> Revcount </button> 
-    <button id = "count" onclick = "count()"> Count </button> 
-    <button id = "reset" onclick = "reset()"> Reset </button> 
+    <div class="btn-container">
+        <button id = "revcount" onclick = "revcount()"> - </button> 
+        <button id = "reset" onclick = "reset()"> Reset </button> 
+        <button id = "count" onclick = "countt()"> + </button> 
+    </div>
+    
     <script src = "script.js"> </script>
 </body>
 </html>
