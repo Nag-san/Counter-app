@@ -1,5 +1,6 @@
 var number = 0;
 var diff = 0;
+var add = 0;
 
 function revcount() {
     let number_rev = document.getElementById("revnum").value;
@@ -10,17 +11,18 @@ function revcount() {
 
 }
 
-
 function reset() {
     number = 0;
     number_rev = 0;
     diff = 0;
+    add = 0;
     document.getElementById("counter").innerHTML = "Let's go!";
 }
 
-
 function count() {
-    number = number + 1;
-    var text = document.getElementById("counter");
-    text.innerHTML = number;
+    let number = document.getElementById("revnum").value;
+    add = add + 1;
+    if (add <= number)
+    document.getElementById("counter").innerHTML = add;
 }
+
