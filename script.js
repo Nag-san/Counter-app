@@ -1,26 +1,17 @@
-var number = 0;
-var diff = 0;
+var count = 0;
 
 function revcount() {
-    let number_rev = document.getElementById("revnum").value;
-    diff = diff + 1;
-    number_rev = number_rev - diff;
-    if ( number_rev >= 0 )
-    document.getElementById("counter").innerHTML = number_rev;
-
+    count = count - 1;
+    document.getElementById("counter").innerHTML = count;
 }
-
 
 function reset() {
-    number = 0;
-    number_rev = 0;
-    diff = 0;
-    document.getElementById("counter").innerHTML = "Let's go!";
+    count = 0;
+    document.getElementById("counter").innerHTML = 0;
 }
 
-
-function count() {
-    number = number + 1;
-    var text = document.getElementById("counter");
-    text.innerHTML = number;
+function countt() {
+    count = count + 1;
+    document.getElementById("counter").innerHTML = count;
 }
+
